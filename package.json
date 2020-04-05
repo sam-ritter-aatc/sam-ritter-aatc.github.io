@@ -2,15 +2,23 @@
   "name": "aatc-events-calendar",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sam-ritter-aatc.github.io",
+  "homepage": "https://sam-ritter-aatc.github.io/aatc-events-calendar",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "fibers": "^4.0.2",
     "gh-pages": "^2.2.0",
+    "moment": "2.24.0",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
+    "react-big-calendar": "^0.24.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-tackle-box": "^2.1.0",
+    "sass": "^1.26.3",
+    "tsutils": "^3.17.1",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
