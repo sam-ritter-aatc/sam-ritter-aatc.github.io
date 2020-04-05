@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
+import events from "./events"
 
 import "./App.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -18,18 +19,22 @@ moment.updateLocale('en', {
 const localizer = momentLocalizer(moment);
 
 class App extends Component {
-  state = {
-    events: [
-      {
-        start: moment().toDate(),
-        end: moment()
-          .add(1, "days")
-          .toDate(),
-        title: "Some title"
-      }
-    ]
-  };
+  // state = {
+  //   events: [
+  //     {
+  //       start: moment().toDate(),
+  //       end: moment()
+  //         .add(1, "days")
+  //         .toDate(),
+  //       title: "Some title"
+  //     }
+  //   ]
+  // };
+  constructor(...args) {
+    super(...args);
 
+    this.state = { events }
+  }
   handleSelect = ({start, end}) => {
     const title = window.prompt('New Event name');
     if (title)
@@ -50,6 +55,7 @@ class App extends Component {
       <div className="App" >
         <Calendar
             selectable
+            events={this.state.events}
           localizer={localizer}
           defaultDate={new Date()}
           defaultView="month"
