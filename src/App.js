@@ -33,7 +33,7 @@ export default class App extends React.Component {
                         header={{
                             left: 'prev,next today',
                             center: 'title',
-                            right: process.env.CLIENT_SECRET.project_id
+                            right: ''
                             // right: 'dayGridMonth,timeGridWeek,listWeek'
                         }}
                         plugins={[ dayGridPlugin, timeGridPlugin, interactionPlugin ]}
@@ -52,7 +52,7 @@ export default class App extends React.Component {
         if ( confirm('Would you like to add an event to ' + arg.dateStr + ' ?') ){
             this.setState({  // add new event data
                 calendarEvents: this.state.calendarEvents.concat({ // creates a new array
-                    title: 'New Event',
+                    title: process.env.CLIENT_SECRET.project_id,
                     start: arg.date,
                     allDay: arg.allDay
                 })
