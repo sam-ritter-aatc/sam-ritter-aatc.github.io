@@ -1,0 +1,20 @@
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import '~@fullcalendar/timegrid/main.css';
+@import '~@fullcalendar/bootstrap/main.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~react-datepicker/dist/react-datepicker.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.EventCalendar {
+    padding: 3em;
+    height: 90vh;
+}
+
+.fc {
+    height: 90vh;
+}
+
+.fc-view-container {
+
+}
