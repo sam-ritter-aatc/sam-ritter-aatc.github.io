@@ -10,6 +10,7 @@ export default class App extends Component {
             <Router>
                 <div className="App">
                     <Switch>
+                        <Route exact path="/aatc-events-calendar" component={EventCalendar}/>
                         <Route exact path="/" component={EventCalendar}/>
                         <Route exact path="/doLogin" render={() => this.redirectLogin()}/>
                     </Switch>
