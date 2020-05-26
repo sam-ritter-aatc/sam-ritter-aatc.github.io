@@ -8,7 +8,19 @@
 
 .EventCalendar {
     padding: 3em;
+    padding-top: 0em;
     height: 90vh;
+    position: relative;
+}
+.createEventButton {
+    text-align: center;
+    position: relative;
+    height: 20px;
+    font-size: small;
+}
+
+.btn btn-outline-secondary {
+    font-size: smaller;
 }
 
 .fc {
@@ -16,5 +28,24 @@
 }
 
 .fc-view-container {
+    height: 80vh;
+}
 
+.fc-toolbar.fc-header-toolbar {
+    margin-bottom: .5em;
+}
+
+.fc-view fc-dayGridMonth-view fc-dayGrid-view {
+    height: 80vh;
+}
+
+.fc fc-ltr fc-bootstrap {
+    height: 80vh;
+}
+
+.fc-body {
+    height: 60vh;
+}
+
+.table-bordered {
 }
