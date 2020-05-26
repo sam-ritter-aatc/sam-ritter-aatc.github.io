@@ -40,28 +40,28 @@ export default class EventCalendar extends Component {
         calendarWeekends: true,
     }
 
-    componentDidMount() {
-        fetch('/api/list')
-            .then(res => res.json())
-            .then(events => this.setState({events: events, update: true}, () => {
-                console.log(events);
-                var myEvents = events.map((event) => {
-                    return {
-                        id: event.id,
-                        title: event.summary,
-                        start: event.start.dateTime || event.start.date,
-                        end: event.end.dateTime || event.end.date,
-                        organizer: event.organizer,
-                        created: event.created,
-                        updated: event.updated,
-                        location: event.location
-                    }
-                });
-                console.log("myEvents", myEvents);
-                this.setState({events: myEvents});
-            }))
-            .catch((error) => console.error(error))
-    }
+    // componentDidMount() {
+    //     fetch('/api/list')
+    //         .then(res => res.json())
+    //         .then(events => this.setState({events: events, update: true}, () => {
+    //             console.log(events);
+    //             var myEvents = events.map((event) => {
+    //                 return {
+    //                     id: event.id,
+    //                     title: event.summary,
+    //                     start: event.start.dateTime || event.start.date,
+    //                     end: event.end.dateTime || event.end.date,
+    //                     organizer: event.organizer,
+    //                     created: event.created,
+    //                     updated: event.updated,
+    //                     location: event.location
+    //                 }
+    //             });
+    //             console.log("myEvents", myEvents);
+    //             this.setState({events: myEvents});
+    //         }))
+    //         .catch((error) => console.error(error))
+    // }
 
     modalToggle = () => {
         this.setState({showCreateModal: !this.state.showCreateModal});
@@ -73,60 +73,82 @@ export default class EventCalendar extends Component {
 
     render() {
         return (
-            <div className='EventCalendar'>
-                <FullCalendar
-                    defaultView="dayGridMonth"
-                    firstDay={1}
-                    fixedWeekCount={false}
-                    header={{
-                        left: 'prev today next',
-                        center: 'title',
-                        right: 'dayGridMonth,timeGridWeek, listMonth'
-                    }}
-                    plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, bootstrapPlugin]}
-                    themeSystem="bootstrap"
-                    displayEventTime={true}
-                    selectable={true}
-                    ref={this.calendarComponentRef}
-                    weekends={this.state.calendarWeekends}
-                    events={this.state.events}
-                    dateClick={this.handleDateClick}
-                    eventClick={this.handleEventClick}
-                    contentHeight='auto'
-                    height='auto'
-                />
-                <Modal
-                    isOpen={this.state.showCreateModal}
-                    toggle={this.modalToggle}
-                    className={this.constructor.name}
-                >
-                    <ModalHeader toggle={this.modalToggle}>
-                        {this.state.isCreateEvent ? "Create New Event" : this.state.currentEvent.title}
-                    </ModalHeader>
-                    <ModalBody>
-                        <form onSubmit={this.onSubmit}>
-                            {!this.state.isCreateEvent && <div className="form-group">
-                                <label>Event ID: {this.state.currentEvent.id}</label>
-                            </div>}
+            <div>
+                <div className='EventCalendar'>
+                    <FullCalendar
+                        defaultView="dayGridMonth"
+                        firstDay={1}
+                        fixedWeekCount={false}
+                        header={{
+                            left: 'prev today next',
+                            center: 'title',
+                            right: 'dayGridMonth,timeGridWeek, listMonth'
+                        }}
+                        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin, bootstrapPlugin]}
+                        themeSystem="bootstrap"
+                        displayEventTime={true}
+                        selectable={true}
+                        ref={this.calendarComponentRef}
+                        weekends={this.state.calendarWeekends}
+                        events={this.state.events}
+                        dateClick={this.handleDateClick}
+                        eventClick={this.handleEventClick}
+                        contentHeight='auto'
+                        height='auto'
+                    />
+                    <Modal
+                        isOpen={this.state.showCreateModal}
+                        toggle={this.modalToggle}
+                        className={this.constructor.name}
+                    >
+                        <ModalHeader toggle={this.modalToggle}>
+                            {this.state.isCreateEvent ? "Create New Event" : this.state.currentEvent.title}
+                        </ModalHeader>
+                        <ModalBody>
+                            <form onSubmit={this.onSubmit}>
+                                {!this.state.isCreateEvent && <div className="form-group">
+                                    <label>Event ID: {this.state.currentEvent.id}</label>
+                                </div>}
 
-                            <SwitchableTextInput label="Event Name: " className="form-group" value={this.state.currentEvent.title} onChange={this.onChangeEventName} inputFlag={this.state.isEditing} />
+                                <SwitchableTextInput label="Event Name: " className="form-group"
+                                                     value={this.state.currentEvent.title}
+                                                     onChange={this.onChangeEventName}
+                                                     inputFlag={this.state.isEditing}/>
 
-                            <SwitchableTextInput label="Event Description: " className="form-group" value={this.state.currentEvent.description} onChange={this.onChangeEventDescription} inputFlag={this.state.isEditing} />
+                                <SwitchableTextInput label="Event Description: " className="form-group"
+                                                     value={this.state.currentEvent.description}
+                                                     onChange={this.onChangeEventDescription}
+                                                     inputFlag={this.state.isEditing}/>
 
-                            <SwitchableTextInput label="Event Location: " className="form-group" value={this.state.currentEvent.location} onChange={this.onChangeLocation} inputFlag={this.state.isEditing} />
+                                <SwitchableTextInput label="Event Location: " className="form-group"
+                                                     value={this.state.currentEvent.location}
+                                                     onChange={this.onChangeLocation} inputFlag={this.state.isEditing}/>
 
-                            <SwitchableDatePicker label="Start Date: " editFlag={this.state.isEditing} selected={this.state.currentEvent.start} handleChange={this.handleStartChange} start={this.state.currentEvent.start} end={this.state.currentEvent.end}/>
+                                <SwitchableDatePicker label="Start Date: " editFlag={this.state.isEditing}
+                                                      selected={this.state.currentEvent.start}
+                                                      handleChange={this.handleStartChange}
+                                                      start={this.state.currentEvent.start}
+                                                      end={this.state.currentEvent.end}/>
 
-                            <SwitchableDatePicker label="End Date: " editFlag={this.state.isEditing} selected={this.state.currentEvent.end} handleChange={this.handleEndChange} start={this.state.currentEvent.start} end={this.state.currentEvent.end} minDate={this.state.currentEvent.start}/>
-                        </form>
-                    </ModalBody>
-                    <ModalFooter>
-                        {!this.state.isEditing && <Button color="warning" onClick={this.editToggle}>Edit</Button>}{" "}
-                        <Button color="primary" onClick={this.saveEvent}>Save</Button>{" "}
-                        <Button color="secondary" onClick={this.modalToggle}>Cancel</Button>
-                    </ModalFooter>
-                </Modal>
-                <button onClick={this.createEvent}>Create Event</button>
+                                <SwitchableDatePicker label="End Date: " editFlag={this.state.isEditing}
+                                                      selected={this.state.currentEvent.end}
+                                                      handleChange={this.handleEndChange}
+                                                      start={this.state.currentEvent.start}
+                                                      end={this.state.currentEvent.end}
+                                                      minDate={this.state.currentEvent.start}/>
+                            </form>
+                        </ModalBody>
+                        <ModalFooter>
+                            {!this.state.isEditing &&
+                            <Button color="warning" onClick={this.editToggle}>Edit</Button>}{" "}
+                            <Button color="primary" onClick={this.saveEvent}>Save</Button>{" "}
+                            <Button color="secondary" onClick={this.modalToggle}>Cancel</Button>
+                        </ModalFooter>
+                    </Modal>
+                </div>
+                <div>
+                    <button onClick={this.createEvent}>Create Event</button>
+                </div>
             </div>
         )
     }
