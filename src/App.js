@@ -1,63 +1,25 @@
-import React, { Component } from "react";
-import moment from "moment";
-import events from "./events"
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import './App.css';
+import EventCalendar from "./components/EventCalendar";
 
-import "./App.css";
-
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import timeGridPlugin from '@fullcalendar/timegrid'
-import interactionPlugin from '@fullcalendar/interaction' // needed for dayClick
-
-
-export default class App extends React.Component {
-  calendarComponentRef = React.createRef()
-  state = {
-    calendarWeekends: true,
-    calendarEvents: [
-      {
-        title: 'Event Now',
-        start: new Date()
-      }
-    ]
-  }
+export default class App extends Component {
 
     render() {
         return (
-            <div className='aatc-events-calendar-app'>
-                 <div className='aatc-events-calendar'>
-                    <FullCalendar
-                        defaultView="dayGridMonth"
-                        firstDay={ 1 }
-                        fixedWeekCount={ false }
-                        header={{
-                            left: 'prev,next today',
-                            center: 'title',
-                            right: ''
-                            // right: 'dayGridMonth,timeGridWeek,listWeek'
-                        }}
-                        plugins={[ dayGridPlugin, timeGridPlugin, interactionPlugin ]}
-                        ref={ this.calendarComponentRef }
-                        weekends={ this.state.calendarWeekends }
-                        events={ this.state.calendarEvents }
-                        dateClick={ this.handleDateClick }
-                    />
+            <Router>
+                <div className="App">
+                    <Switch>
+                        <Route exact path="/" component={EventCalendar}/>
+                        <Route exact path="/doLogin" render={() => this.redirectLogin()}/>
+                    </Switch>
                 </div>
-            </div>
-        )
+            </Router>
+        );
     }
 
-    handleDateClick = (arg) => {
-        // eslint-disable-next-line no-restricted-globals
-        if ( confirm('Would you like to add an event to ' + arg.dateStr + ' ?') ){
-            this.setState({  // add new event data
-                calendarEvents: this.state.calendarEvents.concat({ // creates a new array
-                    title: 'New Event Now',
-                    start: arg.date,
-                    allDay: arg.allDay
-                })
-            })
-        }
+    redirectLogin = () => {
+        window.location.href = 'http://localhost:5000/login';
+        return null;
     }
 }
-
