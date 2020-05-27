@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import moment from "moment";
-import events from "./events"
+// import moment from "moment";
+// import events from "./events"
 
 import "./App.css";
 
@@ -10,7 +10,7 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction' // needed for dayClick
 
 
-export default class App extends React.Component {
+export default class App extends Component {
   calendarComponentRef = React.createRef()
   state = {
     calendarWeekends: true,
