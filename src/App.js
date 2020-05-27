@@ -1,22 +1,14 @@
 import React, {Component} from 'react';
-//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
-import EventCalendar from "./components/EventCalendar";
+import EventCalendar from "./EventCalendar";
 
 export default class App extends Component {
 
     render() {
         return (
-            <EventCalendar />
-            // <Router>
-            //     <div className="App">
-            //         <Switch>
-            //             <Route exact path="/aatc-events-calendar" component={EventCalendar}/>
-            //             <Route exact path="/" component={EventCalendar}/>
-            //             <Route exact path="/doLogin" render={() => this.redirectLogin()}/>
-            //         </Switch>
-            //     </div>
-            // </Router>
+            <div className="App">
+                <EventCalendar/>
+            </div>
         );
     }
 
