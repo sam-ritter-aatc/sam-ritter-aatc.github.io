@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/aatc-events-calendar/static/css/main.2b15e270.chunk.css",
-    "main.js": "/aatc-events-calendar/static/js/main.55577d63.chunk.js",
-    "main.js.map": "/aatc-events-calendar/static/js/main.55577d63.chunk.js.map",
+    "main.js": "/aatc-events-calendar/static/js/main.c86dd0b7.chunk.js",
+    "main.js.map": "/aatc-events-calendar/static/js/main.c86dd0b7.chunk.js.map",
     "runtime-main.js": "/aatc-events-calendar/static/js/runtime-main.f9bf53da.js",
     "runtime-main.js.map": "/aatc-events-calendar/static/js/runtime-main.f9bf53da.js.map",
     "static/css/2.75bc5fea.chunk.css": "/aatc-events-calendar/static/css/2.75bc5fea.chunk.css",
-    "static/js/2.45d55c15.chunk.js": "/aatc-events-calendar/static/js/2.45d55c15.chunk.js",
-    "static/js/2.45d55c15.chunk.js.map": "/aatc-events-calendar/static/js/2.45d55c15.chunk.js.map",
+    "static/js/2.b5508a5f.chunk.js": "/aatc-events-calendar/static/js/2.b5508a5f.chunk.js",
+    "static/js/2.b5508a5f.chunk.js.map": "/aatc-events-calendar/static/js/2.b5508a5f.chunk.js.map",
     "index.html": "/aatc-events-calendar/index.html",
-    "precache-manifest.19a45ae43c88d669f11789d0ed0af93c.js": "/aatc-events-calendar/precache-manifest.19a45ae43c88d669f11789d0ed0af93c.js",
+    "precache-manifest.f861fb9cf471af43c88698c8045cf2da.js": "/aatc-events-calendar/precache-manifest.f861fb9cf471af43c88698c8045cf2da.js",
     "service-worker.js": "/aatc-events-calendar/service-worker.js",
     "static/css/2.75bc5fea.chunk.css.map": "/aatc-events-calendar/static/css/2.75bc5fea.chunk.css.map",
     "static/css/main.2b15e270.chunk.css.map": "/aatc-events-calendar/static/css/main.2b15e270.chunk.css.map",
-    "static/js/2.45d55c15.chunk.js.LICENSE.txt": "/aatc-events-calendar/static/js/2.45d55c15.chunk.js.LICENSE.txt"
+    "static/js/2.b5508a5f.chunk.js.LICENSE.txt": "/aatc-events-calendar/static/js/2.b5508a5f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f9bf53da.js",
     "static/css/2.75bc5fea.chunk.css",
-    "static/js/2.45d55c15.chunk.js",
+    "static/js/2.b5508a5f.chunk.js",
     "static/css/main.2b15e270.chunk.css",
-    "static/js/main.55577d63.chunk.js"
+    "static/js/main.c86dd0b7.chunk.js"
   ]
 }
