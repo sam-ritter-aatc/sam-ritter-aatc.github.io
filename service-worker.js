@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/aatc-events-calendar/precache-manifest.15f7c7b129feb3c3662b532274bfea04.js"
+  "/aatc-events-calendar/precache-manifest.19a45ae43c88d669f11789d0ed0af93c.js"
 );
 
 self.addEventListener('message', (event) => {

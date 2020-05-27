@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/aatc-events-calendar/static/css/main.6f90090e.chunk.css",
-    "main.js": "/aatc-events-calendar/static/js/main.a6860a0f.chunk.js",
-    "main.js.map": "/aatc-events-calendar/static/js/main.a6860a0f.chunk.js.map",
+    "main.css": "/aatc-events-calendar/static/css/main.2b15e270.chunk.css",
+    "main.js": "/aatc-events-calendar/static/js/main.55577d63.chunk.js",
+    "main.js.map": "/aatc-events-calendar/static/js/main.55577d63.chunk.js.map",
     "runtime-main.js": "/aatc-events-calendar/static/js/runtime-main.f9bf53da.js",
     "runtime-main.js.map": "/aatc-events-calendar/static/js/runtime-main.f9bf53da.js.map",
-    "static/css/2.780d603a.chunk.css": "/aatc-events-calendar/static/css/2.780d603a.chunk.css",
-    "static/js/2.e2b8948d.chunk.js": "/aatc-events-calendar/static/js/2.e2b8948d.chunk.js",
-    "static/js/2.e2b8948d.chunk.js.map": "/aatc-events-calendar/static/js/2.e2b8948d.chunk.js.map",
+    "static/css/2.75bc5fea.chunk.css": "/aatc-events-calendar/static/css/2.75bc5fea.chunk.css",
+    "static/js/2.45d55c15.chunk.js": "/aatc-events-calendar/static/js/2.45d55c15.chunk.js",
+    "static/js/2.45d55c15.chunk.js.map": "/aatc-events-calendar/static/js/2.45d55c15.chunk.js.map",
     "index.html": "/aatc-events-calendar/index.html",
-    "precache-manifest.15f7c7b129feb3c3662b532274bfea04.js": "/aatc-events-calendar/precache-manifest.15f7c7b129feb3c3662b532274bfea04.js",
+    "precache-manifest.19a45ae43c88d669f11789d0ed0af93c.js": "/aatc-events-calendar/precache-manifest.19a45ae43c88d669f11789d0ed0af93c.js",
     "service-worker.js": "/aatc-events-calendar/service-worker.js",
-    "static/css/2.780d603a.chunk.css.map": "/aatc-events-calendar/static/css/2.780d603a.chunk.css.map",
-    "static/css/main.6f90090e.chunk.css.map": "/aatc-events-calendar/static/css/main.6f90090e.chunk.css.map",
-    "static/js/2.e2b8948d.chunk.js.LICENSE.txt": "/aatc-events-calendar/static/js/2.e2b8948d.chunk.js.LICENSE.txt",
-    "static/media/EventCalendar.css": "/aatc-events-calendar/static/media/fa-solid-900.ec763292.svg"
+    "static/css/2.75bc5fea.chunk.css.map": "/aatc-events-calendar/static/css/2.75bc5fea.chunk.css.map",
+    "static/css/main.2b15e270.chunk.css.map": "/aatc-events-calendar/static/css/main.2b15e270.chunk.css.map",
+    "static/js/2.45d55c15.chunk.js.LICENSE.txt": "/aatc-events-calendar/static/js/2.45d55c15.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f9bf53da.js",
-    "static/css/2.780d603a.chunk.css",
-    "static/js/2.e2b8948d.chunk.js",
-    "static/css/main.6f90090e.chunk.css",
-    "static/js/main.a6860a0f.chunk.js"
+    "static/css/2.75bc5fea.chunk.css",
+    "static/js/2.45d55c15.chunk.js",
+    "static/css/main.2b15e270.chunk.css",
+    "static/js/main.55577d63.chunk.js"
   ]
 }
