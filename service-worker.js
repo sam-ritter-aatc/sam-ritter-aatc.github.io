@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sam-ritter-aatc/aatc-events-calendar/precache-manifest.b493988f3fa3f92c4bef9b5bba5b111a.js"
+  "/sam-ritter-aatc/aatc-events-calendar/precache-manifest.b24adb3331b8b1945b34e7531b231aa8.js"
 );
 
 self.addEventListener('message', (event) => {
