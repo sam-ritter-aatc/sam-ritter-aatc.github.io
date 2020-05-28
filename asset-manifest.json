@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/aatc-events-calendar/static/css/main.2b15e270.chunk.css",
-    "main.js": "/aatc-events-calendar/static/js/main.c86dd0b7.chunk.js",
-    "main.js.map": "/aatc-events-calendar/static/js/main.c86dd0b7.chunk.js.map",
-    "runtime-main.js": "/aatc-events-calendar/static/js/runtime-main.f9bf53da.js",
-    "runtime-main.js.map": "/aatc-events-calendar/static/js/runtime-main.f9bf53da.js.map",
-    "static/css/2.75bc5fea.chunk.css": "/aatc-events-calendar/static/css/2.75bc5fea.chunk.css",
-    "static/js/2.b5508a5f.chunk.js": "/aatc-events-calendar/static/js/2.b5508a5f.chunk.js",
-    "static/js/2.b5508a5f.chunk.js.map": "/aatc-events-calendar/static/js/2.b5508a5f.chunk.js.map",
-    "index.html": "/aatc-events-calendar/index.html",
-    "precache-manifest.f861fb9cf471af43c88698c8045cf2da.js": "/aatc-events-calendar/precache-manifest.f861fb9cf471af43c88698c8045cf2da.js",
-    "service-worker.js": "/aatc-events-calendar/service-worker.js",
-    "static/css/2.75bc5fea.chunk.css.map": "/aatc-events-calendar/static/css/2.75bc5fea.chunk.css.map",
-    "static/css/main.2b15e270.chunk.css.map": "/aatc-events-calendar/static/css/main.2b15e270.chunk.css.map",
-    "static/js/2.b5508a5f.chunk.js.LICENSE.txt": "/aatc-events-calendar/static/js/2.b5508a5f.chunk.js.LICENSE.txt"
+    "main.css": "/sam-ritter-aatc/aatc-events-calendar/static/css/main.5f361e03.chunk.css",
+    "main.js": "/sam-ritter-aatc/aatc-events-calendar/static/js/main.3caf5d33.chunk.js",
+    "main.js.map": "/sam-ritter-aatc/aatc-events-calendar/static/js/main.3caf5d33.chunk.js.map",
+    "runtime-main.js": "/sam-ritter-aatc/aatc-events-calendar/static/js/runtime-main.aeb6a111.js",
+    "runtime-main.js.map": "/sam-ritter-aatc/aatc-events-calendar/static/js/runtime-main.aeb6a111.js.map",
+    "static/js/2.38040ac9.chunk.js": "/sam-ritter-aatc/aatc-events-calendar/static/js/2.38040ac9.chunk.js",
+    "static/js/2.38040ac9.chunk.js.map": "/sam-ritter-aatc/aatc-events-calendar/static/js/2.38040ac9.chunk.js.map",
+    "index.html": "/sam-ritter-aatc/aatc-events-calendar/index.html",
+    "precache-manifest.b493988f3fa3f92c4bef9b5bba5b111a.js": "/sam-ritter-aatc/aatc-events-calendar/precache-manifest.b493988f3fa3f92c4bef9b5bba5b111a.js",
+    "service-worker.js": "/sam-ritter-aatc/aatc-events-calendar/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/sam-ritter-aatc/aatc-events-calendar/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.38040ac9.chunk.js.LICENSE.txt": "/sam-ritter-aatc/aatc-events-calendar/static/js/2.38040ac9.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/sam-ritter-aatc/aatc-events-calendar/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f9bf53da.js",
-    "static/css/2.75bc5fea.chunk.css",
-    "static/js/2.b5508a5f.chunk.js",
-    "static/css/main.2b15e270.chunk.css",
-    "static/js/main.c86dd0b7.chunk.js"
+    "static/js/runtime-main.aeb6a111.js",
+    "static/js/2.38040ac9.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.3caf5d33.chunk.js"
   ]
 }
